@@ -12,6 +12,8 @@ router.get("/", function (req, res, next) {
 router.get("/event", IndexController.eventList);
 // 定义分类列表路由，GET请求
 router.get("/cate", IndexController.cateList);
+// 定义单条分类路由，GET请求
+router.get("/cate/:id", IndexController.cate);
 // 定义文章列表路由，GET请求
 router.get("/article", IndexController.articleList);
 // 定义文章详情路由，GET请求
